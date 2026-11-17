@@ -1,29 +1,29 @@
         [{"name": "Patatas Bravas",
         "region": "Madrid",
         "description": "Crispy fried potatoes served with a spicy brava sauce. One of Spain's most popular tapas.",
-        "image": "img/patatas-bravas.jpg"},
+        "image": "patatas-bravas.jpg"},
     
         {"name": "Spanish Tortilla",
         "region": "Spain",
         "description": "A traditional Spanish omelette made with potatoes and eggs. Simple, delicious and perfect to share.",
-        "image": "img/tortilla-espanola.jpg"},
+        "image": "tortilla-espanola.jpg"},
     
         {"name": "Jamón Croquettes",
         "region": "Spain",
         "description": "Golden and crispy on the outside, creamy on the inside, filled with delicious Spanish ham.",
-        "image": "img/croquetas.jpg"},
+        "image": "croquetas.jpg"},
     
         {"name": "Garlic Shrimp",
         "region": "Andalusia",
         "description": "Juicy shrimp cooked with garlic, olive oil and a touch of chilli. A classic Spanish favourite.",
-        "image": "img/gambas-al-ajillo.jpg"},
+        "image": "gambas-al-ajillo.jpg"},
     
         {"name": "Galician Octopus",
         "region": "Galicia",
         "description": "Tender octopus served with potatoes, olive oil and paprika, inspired by traditional Galician cuisine.",
-        "image": "img/pulpo-gallega.jpg"},
+        "image": "pulpo-gallega.jpg"},
     
         {"name": "Pan con Tomate",
         "region": "Catalonia",
         "description": "Toasted bread rubbed with fresh tomato, olive oil and salt. A Mediterranean classic.",
-        "image": "img/pan-con-tomate.jpg"}]
+        "image": "pan-con-tomate.jpg"}]
