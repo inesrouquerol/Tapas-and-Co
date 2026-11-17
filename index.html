@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapas & Co.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home">TAPAS & CO.</a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tapas">Our Tapas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#regions">Regions</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">
+                        Explore Spain
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#andalucia">Andalusia</a></li>
+                        <li><a class="dropdown-item" href="#basque">Basque Country</a></li>
+                        <li><a class="dropdown-item" href="#catalonia">Catalonia</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header id="home" class="container-fluid text-center p-5">
+    <h1>Discover the Taste of Spain</h1>
+    <p class="lead">
+        From traditional tapas to regional specialties,
+        explore the flavours that make Spanish cuisine unique.
+    </p>
+    <a href="#tapas" class="btn btn-primary">
+        Discover Our Tapas
+    </a>
+    <button type="button" class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#recommendModal">
+        Recommend a Tapa
+    </button>
+</header>
+ 
+<main>
+    <!-- FIRST SECTION: OUR TAPAS -->
+    <section id="tapas" class="container my-5">
+        <h2 class="text-center mb-4">Our Favourite Tapas</h2>
+        <p class="text-center">
+            Discover six traditional Spanish dishes
+            and the stories behind their flavours.
+        </p>
+        <div id="tapas-container" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </section>
+
+
+    <!-- SECOND SECTION: SPANISH REGIONS -->
+    <section id="regions" class="container my-5">
+        <h2 class="text-center mb-4">A Country of Many Flavours</h2>
+        <div class="row">
+            <div class="col-md-4" id="andalucia">
+                <div class="border p-3 d-flex flex-column">
+                    <h3>Andalusia</h3>
+                    <p>
+                        Famous for its olives, gazpacho
+                        and delicious fried fish.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="basque">
+                <div class="border p-3 d-flex flex-column">
+                    <h3>Basque Country</h3>
+                    <p>
+                        Known for its creative pintxos
+                        and rich culinary traditions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="catalonia">
+                <div class="border p-3 d-flex flex-column">
+                    <h3>Catalonia</h3>
+                    <p>
+                        A Mediterranean cuisine with
+                        dishes such as pan con tomate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5 text-center gastronomy">
+        <h2>Experience Spanish Gastronomy</h2>
+        <p>
+            Spanish cuisine is more than food.
+            It is a celebration of culture and tradition.
+        </p>
+        <img src="img/tapas.jpg"
+            alt="Traditional Spanish tapas"
+            class="img-fluid">
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="container-fluid text-center p-4">
+    <p>© 2026 Tapas & Co. - Discover the Taste of Spain.</p>
+</footer>
+
+<!-- RECOMMENDATION MODAL -->
+<div class="modal fade" id="recommendModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Recommend Your Favourite Tapa
+                </h5>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Share your favourite Spanish dish with us!</p>
+                <form id="recommendForm">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control"
+                        name="name" required>
+                    <label class="form-label">Your Email</label>
+                    <input type="email" class="form-control"
+                        name="email" required>
+                    <label class="form-label">Your Favourite Tapa</label>
+                    <input type="text" class="form-control"
+                        name="tapa" required>
+                    <label class="form-label">Your Recommendation</label>
+                    <textarea class="form-control"
+                        name="recommendation" required></textarea>
+                    <button type="submit" class="btn btn-primary mt-3">
+                        Send Recommendation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Our JavaScript -->
+    <script src="code.js"></script>
+</body>
+</html>
